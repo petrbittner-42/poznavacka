@@ -3,14 +3,14 @@
   "name": "Semenné rostliny (nahosemenné a krytosemenné)",
   "items": [
     {
-      "id": "lipnice-lucni-1",
-      "image": "img/lipnice_lucni_1.jpg",
-      "name": "lipnice luční"
-    },
-    {
       "id": "smrk-ztepily-1",
       "image": "img/smrk_ztepily_1.jpg",
       "name": "smrk ztepilý"
+    },
+    {
+      "id": "lipnice-lucni-1",
+      "image": "img/lipnice_lucni_1.jpg",
+      "name": "lipnice luční"
     },
     {
       "id": "srha-lalocnata-1",

@@ -47,6 +47,10 @@ const items = files.map((file) => {
   return item
 })
 
+// Pořadí: podle names.json (školní seznam); položky, které v něm nejsou, na konec abecedně.
+const order = new Map((master?.items || []).map((it, i) => [it.id, i]))
+items.sort((a, b) => (order.get(a.id) ?? 1e9) - (order.get(b.id) ?? 1e9) || a.id.localeCompare(b.id, 'cs'))
+
 const set = { id: setId, name: setName || master?.name || existing?.name || setId, items }
 writeFileSync(jsonPath, JSON.stringify(set, null, 2) + '\n')
 console.log(`Zapsáno ${jsonPath}: ${items.length} položek`)

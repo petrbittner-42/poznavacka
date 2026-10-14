@@ -1,14 +1,16 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { loadSet, loadSetIndex } from './sets.js'
-import { applyAnswer } from './scheduler.js'
+import { applyAnswer, itemStatus } from './scheduler.js'
 import { createLocalStore, createRemoteStore, hasLocalData } from './progressStore.js'
 import { supabase, sessionUsername } from './supabase.js'
+import Browse from './components/Browse.jsx'
 import Quiz from './components/Quiz.jsx'
 import Stats from './components/Stats.jsx'
 import Account from './components/Account.jsx'
 import SetPicker from './components/SetPicker.jsx'
 
 const TABS = [
+  { id: 'browse', label: 'Prohlížení' },
   { id: 'quiz', label: 'Procvičování' },
   { id: 'stats', label: 'Statistiky' },
   { id: 'account', label: 'Účet' },
@@ -160,6 +162,7 @@ export default function App() {
           <p className="muted center">Načítám…</p>
         ) : (
           <>
+            {tab === 'browse' && <Browse set={set} statusOf={(id) => itemStatus(progress[id])} />}
             {tab === 'quiz' && <Quiz set={set} progress={progress} onAnswer={handleAnswer} />}
             {tab === 'stats' && <Stats set={set} progress={progress} answers={answers} onReset={handleReset} />}
             {tab === 'account' && <Account session={session} onNotice={setNotice} />}

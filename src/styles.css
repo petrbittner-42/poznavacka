@@ -44,7 +44,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   padding: 14px 0 6px;
 }
 .brand {
@@ -63,8 +64,14 @@ select {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
 }
 .user-badge {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.85rem;
   color: var(--muted);
   background: var(--card);
@@ -73,6 +80,7 @@ select {
   padding: 3px 10px;
 }
 .set-picker {
+  min-width: 0;
   max-width: 180px;
   padding: 4px 8px;
   border: 1px solid var(--line);
@@ -88,6 +96,9 @@ select {
 }
 .tabs button {
   flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  font-size: 0.95rem;
   background: none;
   border: none;
   border-bottom: 3px solid transparent;
@@ -248,6 +259,60 @@ button.danger {
 }
 .result strong {
   font-size: 1.15rem;
+}
+
+/* ---------- Prohlížení ---------- */
+.browse-top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.browse-select {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+}
+.browse-counter {
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.browse-caption {
+  text-align: center;
+  margin: 12px 0;
+}
+.browse-caption h2 {
+  margin: 0 0 4px;
+  font-size: 1.4rem;
+}
+.browse-desc {
+  margin: 8px 0 0;
+  text-align: left;
+}
+.browse-caption .pill {
+  display: inline-block;
+  margin-top: 8px;
+}
+.browse-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.browse-nav button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+.browse-nav button:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 /* ---------- Statistiky ---------- */
