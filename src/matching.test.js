@@ -2,13 +2,14 @@ import { describe, it, expect } from 'vitest'
 import { normalize, levenshtein, evaluateAnswer } from './matching.js'
 
 const items = [
+  { id: 'p', name: 'pampeliška lékařská', label: 'pampeliška (smetanka) lékařská', aliases: ['smetanka lékařská'] },
   { id: 'a', name: 'smrk ztepilý', aliases: ['smrk obecný'] },
   { id: 'b', name: 'javor klen' },
   { id: 'c', name: 'javor mléč' },
   { id: 'd', name: 'buk lesní' },
   { id: 'e', name: 'dub letní' },
 ]
-const smrk = items[0], klen = items[1], mlec = items[2], buk = items[3], dub = items[4]
+const smrk = items[1], klen = items[2], mlec = items[3], buk = items[4], dub = items[5]
 
 describe('normalize', () => {
   it('sjednotí velikost, diakritiku a mezery', () => {
@@ -35,5 +36,7 @@ describe('evaluateAnswer', () => {
   it('javor mlecc (překlep) projde', () => expect(evaluateAnswer('javor mlecc', mlec, items).correct).toBe(true))
   it('dub lesní místo buk lesní neprojde (krátké slovo, nulová tolerance)', () => expect(evaluateAnswer('dub lesní', buk, items).correct).toBe(false))
   it('dub letni projde', () => expect(evaluateAnswer('dub letni', dub, items).correct).toBe(true))
+  it('plné znění z dropdownu projde', () => expect(evaluateAnswer('pampeliška (smetanka) lékařská', items[0], items).correct).toBe(true))
+  it('alias smetanka lekarska projde', () => expect(evaluateAnswer('smetanka lekarska', items[0], items).correct).toBe(true))
   it('jen rod (javor) neprojde', () => expect(evaluateAnswer('javor', klen, items).correct).toBe(false))
 })

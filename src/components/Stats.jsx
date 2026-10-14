@@ -65,7 +65,7 @@ export default function Stats({ set, progress, answers, onReset }) {
               <li key={item.id}>
                 <img src={item.src} alt="" />
                 <div>
-                  <b>{item.name}</b>
+                  <b>{item.label || item.name}</b>
                   <div className="muted small">
                     {p.wrong}× špatně, {p.correct}× správně · teď: {STATUS_LABEL[s.statusOf(item.id)]}
                   </div>

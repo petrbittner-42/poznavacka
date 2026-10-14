@@ -53,7 +53,7 @@ export function isCloseEnough(input, target) {
 
 /** Nejmenší vzdálenost zadaného textu k názvu nebo některému aliasu položky. */
 function distanceToItem(input, item) {
-  const names = [item.name, ...(item.aliases || [])].map(normalize)
+  const names = [item.name, item.label, ...(item.aliases || [])].filter(Boolean).map(normalize)
   return Math.min(...names.map((n) => levenshtein(input, n)))
 }
 
@@ -65,7 +65,7 @@ function distanceToItem(input, item) {
 export function evaluateAnswer(rawInput, item, items) {
   const input = normalize(rawInput)
   if (!input) return { correct: false, matchedName: null }
-  const candidates = [item.name, ...(item.aliases || [])]
+  const candidates = [item.name, item.label, ...(item.aliases || [])].filter(Boolean)
   const matched = candidates.find((c) => isCloseEnough(input, normalize(c)))
   if (!matched) return { correct: false, matchedName: null }
 

@@ -6,7 +6,8 @@
 // Očekává obrázky v public/sets/<id-sady>/img/. Název rostliny se bere z názvu souboru:
 //   smrk_ztepily_1.jpg  ->  "smrk ztepily"   (podtržítka = mezery, číslo na konci = pořadí fotky)
 // Diakritiku skript doplnit neumí – po vygenerování ji v set.json doplň ručně (nebo přidej aliasy).
-// Pokud set.json už existuje, zachová ručně upravené názvy a aliasy u položek se stejným id.
+// Pokud set.json už existuje, zachová ručně upravené názvy, popisky (label) a aliasy u položek se stejným id.
+// Položky, ke kterým chybí soubor, ze set.json vypadnou (skript je vypíše).
 
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
@@ -38,6 +39,7 @@ const items = files.map((file) => {
   const old = prev.get(id)
   const name = old?.name || base.replace(/[_-]?\d+$/, '').replace(/[_-]+/g, ' ').trim().toLowerCase()
   const item = { id, image: `img/${file}`, name }
+  if (old?.label) item.label = old.label
   if (old?.aliases?.length) item.aliases = old.aliases
   return item
 })
@@ -45,6 +47,8 @@ const items = files.map((file) => {
 const set = { id: setId, name: setName || existing?.name || setId, items }
 writeFileSync(jsonPath, JSON.stringify(set, null, 2) + '\n')
 console.log(`Zapsáno ${jsonPath}: ${items.length} položek`)
+const missing = [...prev.keys()].filter((id) => !items.some((it) => it.id === id))
+if (missing.length) console.log(`Chybí soubory pro ${missing.length} položek: ${missing.join(', ')}`)
 
 // Aktualizace public/sets/index.json
 const indexPath = join('public', 'sets', 'index.json')

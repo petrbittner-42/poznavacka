@@ -18,7 +18,7 @@ export async function loadSet(setId) {
   return set
 }
 
-/** Unikátní seznam názvů v sadě (pro rozbalovací menu), abecedně. */
+/** Unikátní seznam názvů v sadě (pro rozbalovací menu), abecedně. Používá `label` (plné znění ze seznamu), když existuje. */
 export function setNames(set) {
-  return [...new Set(set.items.map((it) => it.name))].sort((a, b) => a.localeCompare(b, 'cs'))
+  return [...new Set(set.items.map((it) => it.label || it.name))].sort((a, b) => a.localeCompare(b, 'cs'))
 }

@@ -30,8 +30,12 @@ Sady jsou statické soubory v `public/sets/`. Každá sada je samostatná, nic s
    node scripts/build-set.mjs rostliny-2 "Rostliny — sada 2"
    ```
    Vznikne `set.json` a sada se přidá do `public/sets/index.json`.
-4. V `set.json` doplň diakritiku do názvů (`"smrk ztepily"` → `"smrk ztepilý"`) a případně aliasy
-   (`"aliases": ["smrk obecný"]`) – další přijatelné názvy. Opakované spuštění skriptu ruční úpravy zachová.
+4. V `set.json` doplň diakritiku do názvů (`"smrk ztepily"` → `"smrk ztepilý"`) a případně:
+   - `"aliases": ["smrk obecný"]` – další přijatelné odpovědi,
+   - `"label": "pampeliška (smetanka) lékařská"` – plné znění pro rozbalovací menu a zobrazení správné odpovědi
+     (vyhodnocuje se `name`, `label` i každý alias).
+   Opakované spuštění skriptu ruční úpravy zachová. Pokud `set.json` připravíš dopředu (jako u sady
+   `semenne-rostliny`), skript k němu jen doplní obrázky, které existují, a vypíše chybějící.
 5. Commit + push → Vercel nasadí automaticky.
 
 Formát `set.json`:
@@ -41,7 +45,9 @@ Formát `set.json`:
   "id": "rostliny-2",
   "name": "Rostliny — sada 2",
   "items": [
-    { "id": "smrk-ztepily-1", "image": "img/smrk_ztepily_1.jpg", "name": "smrk ztepilý", "aliases": ["smrk obecný"] }
+    { "id": "smrk-ztepily-1", "image": "img/smrk_ztepily_1.jpg", "name": "smrk ztepilý", "aliases": ["smrk obecný"] },
+    { "id": "pampeliska-lekarska-1", "image": "img/pampeliska_lekarska_1.jpg", "name": "pampeliška lékařská",
+      "label": "pampeliška (smetanka) lékařská", "aliases": ["smetanka lékařská"] }
   ]
 }
 ```

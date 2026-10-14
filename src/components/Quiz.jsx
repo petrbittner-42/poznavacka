@@ -109,7 +109,7 @@ export default function Quiz({ set, progress, onAnswer }) {
         <div className={`result ${result.correct ? 'ok' : 'bad'}`}>
           <strong>{result.correct ? 'Správně!' : 'Špatně.'}</strong>
           <div>
-            Správná odpověď: <b>{current.name}</b>
+            Správná odpověď: <b>{current.label || current.name}</b>
             {current.aliases?.length ? <span className="muted"> (také {current.aliases.join(', ')})</span> : null}
           </div>
           {!result.correct && (
