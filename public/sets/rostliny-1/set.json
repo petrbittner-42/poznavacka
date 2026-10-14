@@ -1,0 +1,52 @@
+{
+  "id": "rostliny-1",
+  "name": "Rostliny — ukázková sada",
+  "items": [
+    {
+      "id": "borovice-lesni-1",
+      "image": "img/borovice-lesni-1.svg",
+      "name": "borovice lesní"
+    },
+    {
+      "id": "briza-belokora-1",
+      "image": "img/briza-belokora-1.svg",
+      "name": "bříza bělokorá"
+    },
+    {
+      "id": "buk-lesni-1",
+      "image": "img/buk-lesni-1.svg",
+      "name": "buk lesní"
+    },
+    {
+      "id": "dub-letni-1",
+      "image": "img/dub-letni-1.svg",
+      "name": "dub letní"
+    },
+    {
+      "id": "javor-klen-1",
+      "image": "img/javor-klen-1.svg",
+      "name": "javor klen"
+    },
+    {
+      "id": "javor-mlec-1",
+      "image": "img/javor-mlec-1.svg",
+      "name": "javor mléč"
+    },
+    {
+      "id": "lipa-srdcita-1",
+      "image": "img/lipa-srdcita-1.svg",
+      "name": "lípa srdčitá",
+      "aliases": [
+        "lípa malolistá"
+      ]
+    },
+    {
+      "id": "smrk-ztepily-1",
+      "image": "img/smrk-ztepily-1.svg",
+      "name": "smrk ztepilý",
+      "aliases": [
+        "smrk obecný"
+      ]
+    }
+  ]
+}
