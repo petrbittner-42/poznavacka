@@ -34,8 +34,9 @@ Sady jsou statické soubory v `public/sets/`. Každá sada je samostatná, nic s
    - `"aliases": ["smrk obecný"]` – další přijatelné odpovědi,
    - `"label": "pampeliška (smetanka) lékařská"` – plné znění pro rozbalovací menu a zobrazení správné odpovědi
      (vyhodnocuje se `name`, `label` i každý alias).
-   Opakované spuštění skriptu ruční úpravy zachová. Pokud `set.json` připravíš dopředu (jako u sady
-   `semenne-rostliny`), skript k němu jen doplní obrázky, které existují, a vypíše chybějící.
+   Opakované spuštění skriptu ruční úpravy zachová. Hlavní seznam sady můžeš připravit dopředu do
+   `names.json` (stejný formát, viz `semenne-rostliny`): skript z něj bere názvy a do `set.json` zapíše
+   jen položky, ke kterým existuje obrázek; chybějící vypíše.
 5. Commit + push → Vercel nasadí automaticky.
 
 Formát `set.json`:

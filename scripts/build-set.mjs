@@ -6,8 +6,9 @@
 // Očekává obrázky v public/sets/<id-sady>/img/. Název rostliny se bere z názvu souboru:
 //   smrk_ztepily_1.jpg  ->  "smrk ztepily"   (podtržítka = mezery, číslo na konci = pořadí fotky)
 // Diakritiku skript doplnit neumí – po vygenerování ji v set.json doplň ručně (nebo přidej aliasy).
-// Pokud set.json už existuje, zachová ručně upravené názvy, popisky (label) a aliasy u položek se stejným id.
-// Položky, ke kterým chybí soubor, ze set.json vypadnou (skript je vypíše).
+// Názvy, popisky (label) a aliasy bere (v tomto pořadí) z names.json a z existujícího set.json
+// podle id položky. names.json je „hlavní seznam“ sady – může obsahovat i položky, ke kterým ještě
+// chybí obrázek; do set.json se zapíší jen položky s existujícím souborem, chybějící skript vypíše.
 
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
@@ -26,8 +27,10 @@ if (!existsSync(imgDir)) {
 }
 
 const jsonPath = join(dir, 'set.json')
+const namesPath = join(dir, 'names.json')
 const existing = existsSync(jsonPath) ? JSON.parse(readFileSync(jsonPath, 'utf8')) : null
-const prev = new Map((existing?.items || []).map((it) => [it.id, it]))
+const master = existsSync(namesPath) ? JSON.parse(readFileSync(namesPath, 'utf8')) : null
+const prev = new Map([...(existing?.items || []), ...(master?.items || [])].map((it) => [it.id, it]))
 
 const files = readdirSync(imgDir)
   .filter((f) => /\.(jpe?g|png|webp|svg|gif)$/i.test(f))
@@ -44,7 +47,7 @@ const items = files.map((file) => {
   return item
 })
 
-const set = { id: setId, name: setName || existing?.name || setId, items }
+const set = { id: setId, name: setName || master?.name || existing?.name || setId, items }
 writeFileSync(jsonPath, JSON.stringify(set, null, 2) + '\n')
 console.log(`Zapsáno ${jsonPath}: ${items.length} položek`)
 const missing = [...prev.keys()].filter((id) => !items.some((it) => it.id === id))
