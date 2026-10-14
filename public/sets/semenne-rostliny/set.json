@@ -3,9 +3,446 @@
   "name": "Semenné rostliny (nahosemenné a krytosemenné)",
   "items": [
     {
+      "id": "jinan-dvoulalocny-1",
+      "image": "img/jinan_dvoulalocny_1.jpg",
+      "name": "jinan dvoulaločný"
+    },
+    {
       "id": "smrk-ztepily-1",
       "image": "img/smrk_ztepily_1.jpg",
       "name": "smrk ztepilý"
+    },
+    {
+      "id": "jedle-belokora-1",
+      "image": "img/jedle_belokora_1.jpg",
+      "name": "jedle bělokorá"
+    },
+    {
+      "id": "borovice-lesni-1",
+      "image": "img/borovice_lesni_1.jpg",
+      "name": "borovice lesní"
+    },
+    {
+      "id": "modrin-opadavy-1",
+      "image": "img/modrin_opadavy_1.jpg",
+      "name": "modřín opadavý"
+    },
+    {
+      "id": "tis-cerveny-1",
+      "image": "img/tis_cerveny_1.jpg",
+      "name": "tis červený"
+    },
+    {
+      "id": "zerav-zapadni-1",
+      "image": "img/zerav_zapadni_1.jpg",
+      "name": "zerav západní",
+      "label": "zerav západní (Thuja)",
+      "aliases": [
+        "thuja",
+        "túje"
+      ]
+    },
+    {
+      "id": "leknin-bily-1",
+      "image": "img/leknin_bily_1.jpg",
+      "name": "leknín bílý"
+    },
+    {
+      "id": "stulik-zluty-1",
+      "image": "img/stulik_zluty_1.jpg",
+      "name": "stulík žlutý"
+    },
+    {
+      "id": "pryskyrnik-prudky-1",
+      "image": "img/pryskyrnik_prudky_1.jpg",
+      "name": "pryskyřník prudký"
+    },
+    {
+      "id": "koniklec-1",
+      "image": "img/koniklec_1.jpg",
+      "name": "koniklec"
+    },
+    {
+      "id": "sasanka-hajni-1",
+      "image": "img/sasanka_hajni_1.jpg",
+      "name": "sasanka hajní"
+    },
+    {
+      "id": "mak-sety-1",
+      "image": "img/mak_sety_1.jpg",
+      "name": "mák setý"
+    },
+    {
+      "id": "mak-vlci-1",
+      "image": "img/mak_vlci_1.jpg",
+      "name": "mák vlčí"
+    },
+    {
+      "id": "vlastovicnik-vetsi-1",
+      "image": "img/vlastovicnik_vetsi_1.jpg",
+      "name": "vlaštovičník větší"
+    },
+    {
+      "id": "chmel-otacivy-1",
+      "image": "img/chmel_otacivy_1.jpg",
+      "name": "chmel otáčivý"
+    },
+    {
+      "id": "konopi-sete-1",
+      "image": "img/konopi_sete_1.jpg",
+      "name": "konopí seté"
+    },
+    {
+      "id": "kopriva-dvoudoma-1",
+      "image": "img/kopriva_dvoudoma_1.jpg",
+      "name": "kopřiva dvoudomá"
+    },
+    {
+      "id": "buk-lesni-1",
+      "image": "img/buk_lesni_1.jpg",
+      "name": "buk lesní"
+    },
+    {
+      "id": "dub-zimni-1",
+      "image": "img/dub_zimni_1.jpg",
+      "name": "dub zimní"
+    },
+    {
+      "id": "dub-letni-1",
+      "image": "img/dub_letni_1.jpg",
+      "name": "dub letní"
+    },
+    {
+      "id": "kastanovnik-sety-1",
+      "image": "img/kastanovnik_sety_1.jpg",
+      "name": "kaštanovník setý"
+    },
+    {
+      "id": "briza-belokora-1",
+      "image": "img/briza_belokora_1.jpg",
+      "name": "bříza bělokorá"
+    },
+    {
+      "id": "liska-obecna-1",
+      "image": "img/liska_obecna_1.jpg",
+      "name": "líska obecná"
+    },
+    {
+      "id": "hvozdik-kartouzek-1",
+      "image": "img/hvozdik_kartouzek_1.jpg",
+      "name": "hvozdík kartouzek"
+    },
+    {
+      "id": "repa-obecna-1",
+      "image": "img/repa_obecna_1.jpg",
+      "name": "řepa obecná"
+    },
+    {
+      "id": "vrba-jiva-1",
+      "image": "img/vrba_jiva_1.jpg",
+      "name": "vrba jíva"
+    },
+    {
+      "id": "topol-osika-1",
+      "image": "img/topol_osika_1.jpg",
+      "name": "topol osika"
+    },
+    {
+      "id": "brukev-zelna-1",
+      "image": "img/brukev_zelna_1.jpg",
+      "name": "brukev zelná",
+      "label": "brukev zelná (různé kultivary)"
+    },
+    {
+      "id": "redkev-seta-1",
+      "image": "img/redkev_seta_1.jpg",
+      "name": "ředkev setá"
+    },
+    {
+      "id": "brukev-repka-olejka-1",
+      "image": "img/brukev_repka_olejka_1.jpg",
+      "name": "brukev řepka olejka"
+    },
+    {
+      "id": "penizek-rolni-1",
+      "image": "img/penizek_rolni_1.jpg",
+      "name": "penízek rolní"
+    },
+    {
+      "id": "kokoska-pastusi-tobolka-1",
+      "image": "img/kokoska_pastusi_tobolka_1.jpg",
+      "name": "kokoška pastuší tobolka"
+    },
+    {
+      "id": "jahodnik-1",
+      "image": "img/jahodnik_1.jpg",
+      "name": "jahodník"
+    },
+    {
+      "id": "ostruzinik-malinik-1",
+      "image": "img/ostruzinik_malinik_1.jpg",
+      "name": "ostružiník maliník"
+    },
+    {
+      "id": "ruze-sipkova-1",
+      "image": "img/ruze_sipkova_1.jpg",
+      "name": "růže šípková"
+    },
+    {
+      "id": "jerab-ptaci-1",
+      "image": "img/jerab_ptaci_1.jpg",
+      "name": "jeřáb ptačí"
+    },
+    {
+      "id": "trnovnik-akat-1",
+      "image": "img/trnovnik_akat_1.jpg",
+      "name": "trnovník akát"
+    },
+    {
+      "id": "jetel-lucni-1",
+      "image": "img/jetel_lucni_1.jpg",
+      "name": "jetel luční"
+    },
+    {
+      "id": "jetel-plazivy-1",
+      "image": "img/jetel_plazivy_1.jpg",
+      "name": "jetel plazivý"
+    },
+    {
+      "id": "cicorka-pestra-1",
+      "image": "img/cicorka_pestra_1.jpg",
+      "name": "čičorka pestrá"
+    },
+    {
+      "id": "tolice-vojteska-1",
+      "image": "img/tolice_vojteska_1.jpg",
+      "name": "tolice vojtěška"
+    },
+    {
+      "id": "mrkev-seta-1",
+      "image": "img/mrkev_seta_1.jpg",
+      "name": "mrkev setá"
+    },
+    {
+      "id": "bolsevnik-velkolepy-1",
+      "image": "img/bolsevnik_velkolepy_1.jpg",
+      "name": "bolševník velkolepý"
+    },
+    {
+      "id": "bolehlav-plamaty-1",
+      "image": "img/bolehlav_plamaty_1.jpg",
+      "name": "bolehlav plamatý"
+    },
+    {
+      "id": "pomnenka-1",
+      "image": "img/pomnenka_1.jpg",
+      "name": "pomněnka"
+    },
+    {
+      "id": "lilek-brambor-1",
+      "image": "img/lilek_brambor_1.jpg",
+      "name": "lilek brambor"
+    },
+    {
+      "id": "rulik-zlomocny-1",
+      "image": "img/rulik_zlomocny_1.jpg",
+      "name": "rulík zlomocný"
+    },
+    {
+      "id": "divizna-velkokveta-1",
+      "image": "img/divizna_velkokveta_1.jpg",
+      "name": "divizna velkokvětá"
+    },
+    {
+      "id": "naprstnik-velkokvety-1",
+      "image": "img/naprstnik_velkokvety_1.jpg",
+      "name": "náprstník velkokvětý"
+    },
+    {
+      "id": "naprstnik-cerveny-1",
+      "image": "img/naprstnik_cerveny_1.jpg",
+      "name": "náprstník červený"
+    },
+    {
+      "id": "rozrazil-rezekvitek-1",
+      "image": "img/rozrazil_rezekvitek_1.jpg",
+      "name": "rozrazil rezekvítek"
+    },
+    {
+      "id": "jitrocel-kopinaty-1",
+      "image": "img/jitrocel_kopinaty_1.jpg",
+      "name": "jitrocel kopinatý"
+    },
+    {
+      "id": "hluchavka-bila-1",
+      "image": "img/hluchavka_bila_1.jpg",
+      "name": "hluchavka bílá"
+    },
+    {
+      "id": "hluchavka-nachova-1",
+      "image": "img/hluchavka_nachova_1.jpg",
+      "name": "hluchavka nachová"
+    },
+    {
+      "id": "slunecnice-rocni-1",
+      "image": "img/slunecnice_rocni_1.jpg",
+      "name": "slunečnice roční"
+    },
+    {
+      "id": "kopretina-1",
+      "image": "img/kopretina_1.jpg",
+      "name": "kopretina"
+    },
+    {
+      "id": "hermanek-pravy-1",
+      "image": "img/hermanek_pravy_1.jpg",
+      "name": "heřmánek pravý"
+    },
+    {
+      "id": "pchac-rolni-1",
+      "image": "img/pchac_rolni_1.jpg",
+      "name": "pcháč rolní"
+    },
+    {
+      "id": "chrpa-polni-1",
+      "image": "img/chrpa_polni_1.jpg",
+      "name": "chrpa polní"
+    },
+    {
+      "id": "cekanka-obecna-1",
+      "image": "img/cekanka_obecna_1.jpg",
+      "name": "čekanka obecná"
+    },
+    {
+      "id": "pampeliska-lekarska-1",
+      "image": "img/pampeliska_lekarska_1.jpg",
+      "name": "pampeliška lékařská",
+      "label": "pampeliška (smetanka) lékařská",
+      "aliases": [
+        "smetanka lékařská"
+      ]
+    },
+    {
+      "id": "sedmikraska-obecna-1",
+      "image": "img/sedmikraska_obecna_1.jpg",
+      "name": "sedmikráska obecná"
+    },
+    {
+      "id": "javor-klen-1",
+      "image": "img/javor_klen_1.jpg",
+      "name": "javor klen",
+      "label": "javor klen (plody)"
+    },
+    {
+      "id": "javor-mlec-1",
+      "image": "img/javor_mlec_1.jpg",
+      "name": "javor mléč",
+      "label": "javor mléč (plody)"
+    },
+    {
+      "id": "javor-babyka-1",
+      "image": "img/javor_babyka_1.jpg",
+      "name": "javor babyka",
+      "label": "javor babyka (plody)"
+    },
+    {
+      "id": "lipa-malolista-1",
+      "image": "img/lipa_malolista_1.jpg",
+      "name": "lípa malolistá",
+      "label": "lípa malolistá (srdčitá)",
+      "aliases": [
+        "lípa srdčitá"
+      ]
+    },
+    {
+      "id": "bez-cerny-1",
+      "image": "img/bez_cerny_1.jpg",
+      "name": "bez černý"
+    },
+    {
+      "id": "pamelnik-bily-1",
+      "image": "img/pamelnik_bily_1.jpg",
+      "name": "pámelník bílý"
+    },
+    {
+      "id": "cibule-kuchynska-1",
+      "image": "img/cibule_kuchynska_1.jpg",
+      "name": "cibule kuchyňská"
+    },
+    {
+      "id": "cesnek-kuchynsky-1",
+      "image": "img/cesnek_kuchynsky_1.jpg",
+      "name": "česnek kuchyňský"
+    },
+    {
+      "id": "tulipan-1",
+      "image": "img/tulipan_1.jpg",
+      "name": "tulipán"
+    },
+    {
+      "id": "lilie-zlatohlava-1",
+      "image": "img/lilie_zlatohlava_1.jpg",
+      "name": "lilie zlatohlavá"
+    },
+    {
+      "id": "konvalinka-vonna-1",
+      "image": "img/konvalinka_vonna_1.jpg",
+      "name": "konvalinka vonná"
+    },
+    {
+      "id": "vrani-oko-ctyrliste-1",
+      "image": "img/vrani_oko_ctyrliste_1.jpg",
+      "name": "vraní oko čtyřlisté"
+    },
+    {
+      "id": "snezenka-podsneznik-1",
+      "image": "img/snezenka_podsneznik_1.jpg",
+      "name": "sněženka podsněžník"
+    },
+    {
+      "id": "bledule-jarni-1",
+      "image": "img/bledule_jarni_1.jpg",
+      "name": "bledule jarní"
+    },
+    {
+      "id": "narcis-zluty-1",
+      "image": "img/narcis_zluty_1.jpg",
+      "name": "narcis žlutý"
+    },
+    {
+      "id": "strevicnik-pantoflicek-1",
+      "image": "img/strevicnik_pantoflicek_1.jpg",
+      "name": "střevíčník pantoflíček"
+    },
+    {
+      "id": "psenice-seta-1",
+      "image": "img/psenice_seta_1.jpg",
+      "name": "pšenice setá"
+    },
+    {
+      "id": "zito-sete-1",
+      "image": "img/zito_sete_1.jpg",
+      "name": "žito seté"
+    },
+    {
+      "id": "jecmen-sety-1",
+      "image": "img/jecmen_sety_1.jpg",
+      "name": "ječmen setý"
+    },
+    {
+      "id": "oves-sety-1",
+      "image": "img/oves_sety_1.jpg",
+      "name": "oves setý"
+    },
+    {
+      "id": "ryze-seta-1",
+      "image": "img/ryze_seta_1.jpg",
+      "name": "rýže setá"
+    },
+    {
+      "id": "kukurice-seta-1",
+      "image": "img/kukurice_seta_1.jpg",
+      "name": "kukuřice setá"
     },
     {
       "id": "lipnice-lucni-1",

@@ -1,12 +1,7 @@
 [
   {
-    "id": "rostliny-1",
-    "name": "Rostliny — ukázková sada",
-    "count": 8
-  },
-  {
     "id": "semenne-rostliny",
     "name": "Semenné rostliny (nahosemenné a krytosemenné)",
-    "count": 3
+    "count": 87
   }
 ]
