@@ -94,7 +94,7 @@ export default function Account({ session, onNotice }) {
               onChange={(e) => setUsername(e.target.value)}
               autoComplete="username"
               autoCapitalize="off"
-              placeholder="např. klarka_b"
+              placeholder="např. student_01"
             />
           </label>
           <label>
