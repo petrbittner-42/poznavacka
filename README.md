@@ -57,6 +57,7 @@ Formát `set.json`:
 ## Jak se vyhodnocuje odpověď
 
 - Nerozlišují se velká/malá písmena ani diakritika; interpunkce se ignoruje.
+- U víceslovných názvů projde i obrácené pořadí slov („vlčí mák“ = „mák vlčí“).
 - Tolerance na překlepy po slovech: slovo do 3 znaků 0 chyb, 4–6 znaků 1 chyba, 7+ znaků 2 chyby
   („smrk stepylý“ projde). Nebo celý název s tolerancí `délka / 6` (max 3).
 - Pojistka: když je odpověď blíž k názvu jiné rostliny v sadě, počítá se jako chyba

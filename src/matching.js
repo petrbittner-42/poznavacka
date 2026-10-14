@@ -51,10 +51,16 @@ export function isCloseEnough(input, target) {
   return levenshtein(input, target) <= allowed
 }
 
+/** Varianty zadaného textu: jak je, a u víceslovných i s obráceným pořadím slov („vlčí mák“ = „mák vlčí“). */
+function variants(input) {
+  const w = input.split(' ')
+  return w.length > 1 ? [input, [...w].reverse().join(' ')] : [input]
+}
+
 /** Nejmenší vzdálenost zadaného textu k názvu nebo některému aliasu položky. */
 function distanceToItem(input, item) {
   const names = [item.name, item.label, ...(item.aliases || [])].filter(Boolean).map(normalize)
-  return Math.min(...names.map((n) => levenshtein(input, n)))
+  return Math.min(...variants(input).flatMap((v) => names.map((n) => levenshtein(v, n))))
 }
 
 /**
@@ -66,7 +72,7 @@ export function evaluateAnswer(rawInput, item, items) {
   const input = normalize(rawInput)
   if (!input) return { correct: false, matchedName: null }
   const candidates = [item.name, item.label, ...(item.aliases || [])].filter(Boolean)
-  const matched = candidates.find((c) => isCloseEnough(input, normalize(c)))
+  const matched = candidates.find((c) => variants(input).some((v) => isCloseEnough(v, normalize(c))))
   if (!matched) return { correct: false, matchedName: null }
 
   const own = distanceToItem(input, item)

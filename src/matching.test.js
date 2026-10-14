@@ -8,6 +8,8 @@ const items = [
   { id: 'c', name: 'javor mléč' },
   { id: 'd', name: 'buk lesní' },
   { id: 'e', name: 'dub letní' },
+  { id: 'f', name: 'mák vlčí' },
+  { id: 'g', name: 'mák setý' },
 ]
 const smrk = items[1], klen = items[2], mlec = items[3], buk = items[4], dub = items[5]
 
@@ -38,5 +40,8 @@ describe('evaluateAnswer', () => {
   it('dub letni projde', () => expect(evaluateAnswer('dub letni', dub, items).correct).toBe(true))
   it('plné znění z dropdownu projde', () => expect(evaluateAnswer('pampeliška (smetanka) lékařská', items[0], items).correct).toBe(true))
   it('alias smetanka lekarska projde', () => expect(evaluateAnswer('smetanka lekarska', items[0], items).correct).toBe(true))
+  it('obrácené pořadí slov (vlčí mák) projde', () => expect(evaluateAnswer('vlčí mák', items[6], items).correct).toBe(true))
+  it('vlci mak s překlepem projde', () => expect(evaluateAnswer('vlci maak', items[6], items).correct).toBe(true))
+  it('setý mák místo mák vlčí neprojde', () => expect(evaluateAnswer('setý mák', items[6], items).correct).toBe(false))
   it('jen rod (javor) neprojde', () => expect(evaluateAnswer('javor', klen, items).correct).toBe(false))
 })
