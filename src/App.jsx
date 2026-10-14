@@ -17,7 +17,7 @@ const TABS = [
 ]
 
 export default function App() {
-  const [tab, setTab] = useState('quiz')
+  const [tab, setTab] = useState('browse')
   const [session, setSession] = useState(undefined) // undefined = ještě nevíme
   const [setIndex, setSetIndex] = useState([])
   const [setId, setSetId] = useState(() => localStorage.getItem('poznavacka:setId') || null)
