@@ -62,7 +62,7 @@ const indexPath = join('public', 'sets', 'index.json')
 const index = existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, 'utf8')) : []
 const row = { id: setId, name: set.name, count: items.length }
 const i = index.findIndex((s) => s.id === setId)
-if (i >= 0) index[i] = row
+if (i >= 0) index[i] = { ...index[i], ...row } // zachová ruční příznaky, např. "default": true
 else index.push(row)
 writeFileSync(indexPath, JSON.stringify(index, null, 2) + '\n')
 console.log(`Aktualizován ${indexPath}`)

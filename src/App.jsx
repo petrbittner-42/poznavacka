@@ -45,7 +45,13 @@ export default function App() {
       .then((idx) => {
         setSetIndex(idx)
         if (!idx.length) throw new Error('Nejsou žádné sady')
-        if (!idx.some((s) => s.id === setId)) setSetId(idx[0].id)
+        // Výchozí sada = ta s "default": true v index.json (jinak první). Když se výchozí sada změní,
+        // přepne se na ni každý jednou; pak už platí jeho vlastní volba.
+        const def = idx.find((s) => s.default) || idx[0]
+        if (localStorage.getItem('poznavacka:defaultSetSeen') !== def.id) {
+          localStorage.setItem('poznavacka:defaultSetSeen', def.id)
+          setSetId(def.id)
+        } else if (!idx.some((s) => s.id === setId)) setSetId(def.id)
       })
       .catch((e) => setError(e.message))
   }, [])

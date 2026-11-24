@@ -1,12 +1,13 @@
 [
   {
+    "id": "houby",
+    "name": "Houby",
+    "count": 37,
+    "default": true
+  },
+  {
     "id": "semenne-rostliny",
     "name": "Semenné rostliny (nahosemenné a krytosemenné)",
     "count": 87
-  },
-  {
-    "id": "houby",
-    "name": "Houby",
-    "count": 37
   }
 ]
