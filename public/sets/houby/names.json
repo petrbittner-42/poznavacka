@@ -1,0 +1,209 @@
+{
+  "id": "houby",
+  "name": "Houby",
+  "items": [
+    {
+      "id": "hadovka-smrduta-1",
+      "image": "img/hadovka_smrduta_1.jpg",
+      "name": "hadovka smrdutá"
+    },
+    {
+      "id": "ryzec-peprny-1",
+      "image": "img/ryzec_peprny_1.jpg",
+      "name": "ryzec peprný"
+    },
+    {
+      "id": "krasnoruzek-lepkavy-1",
+      "image": "img/krasnoruzek_lepkavy_1.jpg",
+      "name": "krásnorůžek lepkavý"
+    },
+    {
+      "id": "hrib-hnedy-1",
+      "image": "img/hrib_hnedy_1.jpg",
+      "name": "hřib hnědý",
+      "aliases": [
+        "suchohřib hnědý"
+      ]
+    },
+    {
+      "id": "hrib-smrkovy-1",
+      "image": "img/hrib_smrkovy_1.jpg",
+      "name": "hřib smrkový"
+    },
+    {
+      "id": "hvezdovka-brvita-1",
+      "image": "img/hvezdovka_brvita_1.jpg",
+      "name": "hvězdovka brvitá"
+    },
+    {
+      "id": "liska-obecna-1",
+      "image": "img/liska_obecna_1.jpg",
+      "name": "liška obecná",
+      "aliases": [
+        "liška jedlá"
+      ]
+    },
+    {
+      "id": "pecarka-zapasna-1",
+      "image": "img/pecarka_zapasna_1.jpg",
+      "name": "pečárka zápašná"
+    },
+    {
+      "id": "sirovec-zlutooranzovy-1",
+      "image": "img/sirovec_zlutooranzovy_1.jpg",
+      "name": "sírovec žlutooranžový"
+    },
+    {
+      "id": "lakovka-ametystova-1",
+      "image": "img/lakovka_ametystova_1.jpg",
+      "name": "lakovka ametystová"
+    },
+    {
+      "id": "drevnatka-kyjovita-1",
+      "image": "img/drevnatka_kyjovita_1.jpg",
+      "name": "dřevnatka kyjovitá"
+    },
+    {
+      "id": "holubinka-nazelenala-1",
+      "image": "img/holubinka_nazelenala_1.jpg",
+      "name": "holubinka nazelenalá"
+    },
+    {
+      "id": "kuratka-1",
+      "image": "img/kuratka_1.jpg",
+      "name": "kuřátka",
+      "label": "kuřátka sp.",
+      "aliases": [
+        "kuřátka sp"
+      ]
+    },
+    {
+      "id": "pychavka-obecna-1",
+      "image": "img/pychavka_obecna_1.jpg",
+      "name": "pýchavka obecná"
+    },
+    {
+      "id": "pavucinec-1",
+      "image": "img/pavucinec_1.jpg",
+      "name": "pavučinec",
+      "label": "pavučinec sp.",
+      "aliases": [
+        "pavučinec sp"
+      ]
+    },
+    {
+      "id": "troudnatec-pasovany-1",
+      "image": "img/troudnatec_pasovany_1.jpg",
+      "name": "troudnatec pásovaný"
+    },
+    {
+      "id": "uchac-cepcovity-1",
+      "image": "img/uchac_cepcovity_1.jpg",
+      "name": "ucháč čepcovitý"
+    },
+    {
+      "id": "hnojnik-obecny-1",
+      "image": "img/hnojnik_obecny_1.jpg",
+      "name": "hnojník obecný"
+    },
+    {
+      "id": "ryzec-liskovy-1",
+      "image": "img/ryzec_liskovy_1.jpg",
+      "name": "ryzec liškový"
+    },
+    {
+      "id": "hliva-ustricna-1",
+      "image": "img/hliva_ustricna_1.jpg",
+      "name": "hlíva ústřičná"
+    },
+    {
+      "id": "brezovnik-obecny-1",
+      "image": "img/brezovnik_obecny_1.jpg",
+      "name": "březovník obecný"
+    },
+    {
+      "id": "bedla-vysoka-1",
+      "image": "img/bedla_vysoka_1.jpg",
+      "name": "bedla vysoká"
+    },
+    {
+      "id": "strmelka-velika-1",
+      "image": "img/strmelka_velika_1.jpg",
+      "name": "strmělka veliká"
+    },
+    {
+      "id": "supinovka-zlatozavojna-1",
+      "image": "img/supinovka_zlatozavojna_1.jpg",
+      "name": "šupinovka zlatozávojná"
+    },
+    {
+      "id": "lysohlavka-ceska-1",
+      "image": "img/lysohlavka_ceska_1.jpg",
+      "name": "lysohlávka česká"
+    },
+    {
+      "id": "psivka-obecna-1",
+      "image": "img/psivka_obecna_1.jpg",
+      "name": "psivka obecná"
+    },
+    {
+      "id": "koralovec-jedlovy-1",
+      "image": "img/koralovec_jedlovy_1.jpg",
+      "name": "korálovec jedlový"
+    },
+    {
+      "id": "klouzek-slicny-1",
+      "image": "img/klouzek_slicny_1.jpg",
+      "name": "klouzek sličný"
+    },
+    {
+      "id": "choros-poloplastovy-1",
+      "image": "img/choros_poloplastovy_1.jpg",
+      "name": "choroš poloplášťový"
+    },
+    {
+      "id": "muchomurka-zelena-1",
+      "image": "img/muchomurka_zelena_1.jpg",
+      "name": "muchomůrka zelená"
+    },
+    {
+      "id": "muchomurka-cervena-1",
+      "image": "img/muchomurka_cervena_1.jpg",
+      "name": "muchomůrka červená"
+    },
+    {
+      "id": "smrz-1",
+      "image": "img/smrz_1.jpg",
+      "name": "smrž",
+      "label": "smrž sp.",
+      "aliases": [
+        "smrž sp"
+      ]
+    },
+    {
+      "id": "lanyz-cernovytrusny-1",
+      "image": "img/lanyz_cernovytrusny_1.jpg",
+      "name": "lanýž černovýtrusný"
+    },
+    {
+      "id": "kvasinka-pivni-1",
+      "image": "img/kvasinka_pivni_1.jpg",
+      "name": "kvasinka pivní"
+    },
+    {
+      "id": "padli-ruzove-1",
+      "image": "img/padli_ruzove_1.jpg",
+      "name": "padlí růžové"
+    },
+    {
+      "id": "vlci-mleko-cervene-1",
+      "image": "img/vlci_mleko_cervene_1.jpg",
+      "name": "vlčí mléko červené"
+    },
+    {
+      "id": "slizovka-trislova-1",
+      "image": "img/slizovka_trislova_1.jpg",
+      "name": "slizovka tříslová"
+    }
+  ]
+}
